@@ -12,7 +12,7 @@ from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill
 class MovieCentralSkill(OVOSCommonPlaybackSkill):
     def __init__(self, *args, **kwargs):
         self.supported_media = [MediaType.MOVIE]
-        self.skill_icon = join(dirname(__file__), "ui", "moviecentral_icon.jpg")
+        self.skill_icon = join(dirname(__file__), "res", "moviecentral_icon.jpg")
         self.archive = JsonStorageXDG("MovieCentral", subfolder="OCP")
         super().__init__(*args, **kwargs)
 
